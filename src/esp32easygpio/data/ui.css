@@ -1,0 +1,122 @@
+ body {
+    padding:0;
+    margin:0;
+    color:#fff;
+    background:#555;
+    font-family:Roboto, Helvetica, sans-serif;
+    font-size:16px;
+    overflow:hidden;
+}
+ div {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ .layout {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+ .footer {
+    padding:5px;
+    background:#333;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:50px;
+    border-top:1px solid #222;
+}
+ .settings {
+    padding:10px;
+    position:absolute;
+    bottom:50px;
+    right:0;
+    left:0;
+    height:200px;
+}
+ .header {
+    font-size:19px;
+    text-decoration: underline;
+    margin-bottom:5px;
+}
+ .dark {
+    color:#CCC
+}
+ label {
+    display:block;
+}
+ span {
+    font-size:5em;
+    font-weight:bold;
+    text-align:center;
+    position:absolute;
+    bottom:0;
+    top:15%;
+    left:0;
+    right:0;
+}
+ .tilesbox {
+    position:absolute;
+    bottom:60;
+    top:0;
+    left:0;
+    right:0;
+    padding:5px;
+}
+ .tile {
+    box-sizing: border-box;
+     background:#EEE;
+    display:inline-block;
+    border-radius: .2em;
+     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 7px 14px rgba(0, 0, 0, 0.1), inset 0 0 3em rgba(0, 0, 0, 0.3);
+     opacity: 0.4;
+     position:relative;
+}
+ .on {
+     opacity: 1;
+     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 7px 14px rgba(0, 0, 0, 0.1), inset 0 0 5em rgba(0, 0, 0, 0.5) 
+}
+ .tiles {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+     grid-gap: .5em;
+     width: 100%;
+     height: 100%;
+     padding: .5em;
+     box-sizing: border-box;
+     transition: all 0.3s ease;
+     margin: 0 auto;
+}
+ .blue {
+    background-color:#0076FF
+}
+ .green {
+    background-color:#13E530
+}
+ .yellow {
+    background-color:#F7EA03
+}
+ .red {
+    background-color:#FF3824
+}
+ .pink {
+    background-color:#E061D3
+}
+ .teal {
+    background-color:#54C7FC
+}
+ .blink {
+     animation: blinker 1s linear infinite;
+}
+ @keyframes blinker {
+     50% {
+         box-shadow: inset 0 0 9em rgba(0, 0, 0, 0.9);
+    }
+}

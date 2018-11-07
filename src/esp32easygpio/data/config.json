@@ -1,0 +1,20 @@
+{
+  "ap": {
+    "ssid": "ESP32EazyRGB",
+    "password": "123456789"
+  },
+  "tg": {
+    "test": {
+      "gpio": 3,
+      "leds": 30
+    }
+  },
+  "bt": [
+    {
+      "color": "red",
+      "type": "momentary",
+      "letter": "P",
+      "pins": "test"
+    }
+  ]
+}
